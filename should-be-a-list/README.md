@@ -1,7 +1,7 @@
 Reproduces a TF OSS bug where:
 
- * A deeply nested computed output of type "list" is plumbed out to the top level
- * That output is passed back into a module as an input variabel
+ * A module with computed output of type "list" is plumbed out to the top level
+ * That output is passed back into a module as an input variable
  * That input variable is used in a resource that requires a list type paramter
  * Even though the input variable was declared as type "list", the resource
    complains about the type of the parameter.
